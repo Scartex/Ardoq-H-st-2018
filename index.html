@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" type="text/css" media="all">
+    <script src="script.js" defer></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx4BWGwtHm_WAkGHl8Sri-e1SQ9L6ML78&callback=initMap"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+  </head>
+
+
+  <body>
+    <div id="head">
+      <h1 id="title"><center>Ardoq Code Test</center></h1>
+    </div>
+
+    <div id="map"></div>
+
+      <div id="kebabinfo" style="display: none;">
+        <h2 style="font-family: sans-serif;">Beirut Kebab</h2>
+          <p >Her kan det stå litt informasjon etterhvert </p>
+          <p style="font-style: italic;">Medium kebab i pita: 75 kr</p>
+      </div>
+
+      <div id="kebabinfo2" style="display: none;">
+        <h2 style="font-family: sans-serif;">Dronningens Kebab</h2>
+          <p>Her kan det stå litt informasjon etterhvert </p>
+          <p style="font-style: italic;">Medium kebab i pita: 89 kr</p>
+      </div>
+
+      <div id="kebabinfo3" style="display: none;">
+        <h2 style="font-family: sans-serif;">Handsken Kebab</h2>
+          <p>Her kan det stå litt informasjon etterhvert</p>
+          <p style="font-style: italic;">Medium kebab i pita: 80 kr</p>
+      </div>
+      <p id="numberOfKebabs"></p>
+      <div id="liste" style="display: none;">
+        <h3 id="sortedTitle">Sortert etter mest kebab for pengene:</h3>
+          <ul id="view">
+            <li id="Spot1"></li>
+            <li id="Spot2"></li>
+            <li id="Spot3"></li>
+          </ul>
+      </div>
+
+
+    <form id="form1">
+      <h3 id="mneyKebab"><center>Hvor mye penger vil du bruke på kebab?</center></h3>
+        <center><p style="font-style: italic;" id="trykk">Trykk "Finn kebab" for å gå til neste kebabsted</p></center>
+          <input type="text" id="userInput" size="20"  />
+            <button id="button2" type="button" style="top:145%; left: 34%;" onclick="otherName();">Finn kebab</button>
+              <button id="refreshButton" type="button" value="Refresh Page" onClick="window.location.reload()" style="positon: absolute; top: 195%; left: 34%">Reset</button>
+                <script>
+                  function otherName(){
+                    // Takes in user input:
+                    input = userInput.value;
+                    input = parseInt(input, 10);
+
+                      if(timesClicked == 0){
+                        // Calculates number of kebabs and reduces amount of decimals to 2.
+                        var result = input/markers[timesClicked].price;
+                        result = result.toFixed(2);
+                        markers[timesClicked].antall = result;
+
+                        numberOfKebabs.innerHTML = "For " + input + " kr har du har råd til " + result + " kebab(er)";
+                      }
+                      if(timesClicked == 1){
+                        var result2 = input/markers[timesClicked].price;
+                        result2 = result2.toFixed(2);
+                        markers[timesClicked].antall = result2;
+
+                        numberOfKebabs.innerHTML = "For " + input + " kr har du har råd til " + result2 + " kebab(er)";
+                      }
+                      if(timesClicked == 2){
+                        var result3 = input/markers[timesClicked].price;
+                        result3 = result3.toFixed(2);
+                        markers[timesClicked].antall = result3;
+
+                        numberOfKebabs.innerHTML = "For " + input + " kr har du har råd til " + result3 + " kebab(er)";
+
+                        var sorted = regnBilligste();
+                        // Lists in sorted order:
+                        Spot1.innerHTML = sorted[0].name + ": " + sorted[0].antall + " stk";
+                        Spot2.innerHTML = sorted[1].name + ": " + sorted[1].antall + " stk";
+                        Spot3.innerHTML = sorted[2].name + ": " + sorted[2].antall + " stk";
+
+
+                      }
+                    }
+                    // Function to sort kebab by most kebab for certain amount of money
+                  function regnBilligste(){
+                    for(var i = markers.length-1; i>=0; i--){
+                      for(var j = 1; j <= i; j++){
+                        if(markers[j-1].antall < markers[j].antall){
+                          var temp = markers[j-1];
+                          markers[j-1] = markers[j];
+                          markers[j] = temp;
+                        }
+                      }
+                    }
+                    return markers;
+                  }
+                </script>
+    </form>
+  </body>
+</html>
