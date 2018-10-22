@@ -1,0 +1,237 @@
+Array = {1, 10, 2, 6, 5, 3}:
+
+---- test 1: -----
+Index of i: 0
+Index of j: 1
+Index of k: 2
+Max before: -2147483648
+Max after: 20
+Index of k: 3
+Max before: 20
+Max after: 60
+Index of k: 4
+Max before: 60
+Max after: 60
+Index of k: 5
+Max before: 60
+Max after: 60
+Index of j: 2
+Index of k: 3
+Max before: 60
+Max after: 60
+Index of k: 4
+Max before: 60
+Max after: 60
+Index of k: 5
+Max before: 60
+Max after: 60
+Index of j: 3
+Index of k: 4
+Max before: 60
+Max after: 60
+Index of k: 5
+Max before: 60
+Max after: 60
+Index of j: 4
+Index of k: 5
+Max before: 60
+Max after: 60
+Index of i: 1
+Index of j: 2
+Index of k: 3
+Max before: 60
+Max after: 120
+Index of k: 4
+Max before: 120
+Max after: 120
+Index of k: 5
+Max before: 120
+Max after: 120
+Index of j: 3
+Index of k: 4
+Max before: 120
+Max after: 300
+Index of k: 5
+Max before: 300
+Max after: 300
+Index of j: 4
+Index of k: 5
+Max before: 300
+Max after: 300
+Index of i: 2
+Index of j: 3
+Index of k: 4
+Max before: 300
+Max after: 300
+Index of k: 5
+Max before: 300
+Max after: 300
+Index of j: 4
+Index of k: 5
+Max before: 300
+Max after: 300
+Index of i: 3
+Index of j: 4
+Index of k: 5
+Max before: 300
+Max after: 300
+Result: 300
+
+
+Array = {10, 10, 50, 23, 19, 85}
+
+---- test 2: -----
+Index of i: 0
+Index of j: 1
+Index of k: 2
+Max before: -2147483648
+Max after: 5000
+Index of k: 3
+Max before: 5000
+Max after: 5000
+Index of k: 4
+Max before: 5000
+Max after: 5000
+Index of k: 5
+Max before: 5000
+Max after: 8500
+Index of j: 2
+Index of k: 3
+Max before: 8500
+Max after: 11500
+Index of k: 4
+Max before: 11500
+Max after: 11500
+Index of k: 5
+Max before: 11500
+Max after: 42500
+Index of j: 3
+Index of k: 4
+Max before: 42500
+Max after: 42500
+Index of k: 5
+Max before: 42500
+Max after: 42500
+Index of j: 4
+Index of k: 5
+Max before: 42500
+Max after: 42500
+Index of i: 1
+Index of j: 2
+Index of k: 3
+Max before: 42500
+Max after: 42500
+Index of k: 4
+Max before: 42500
+Max after: 42500
+Index of k: 5
+Max before: 42500
+Max after: 42500
+Index of j: 3
+Index of k: 4
+Max before: 42500
+Max after: 42500
+Index of k: 5
+Max before: 42500
+Max after: 42500
+Index of j: 4
+Index of k: 5
+Max before: 42500
+Max after: 42500
+Index of i: 2
+Index of j: 3
+Index of k: 4
+Max before: 42500
+Max after: 42500
+Index of k: 5
+Max before: 42500
+Max after: 97750
+Index of j: 4
+Index of k: 5
+Max before: 97750
+Max after: 97750
+Index of i: 3
+Index of j: 4
+Index of k: 5
+Max before: 97750
+Max after: 97750
+Result: 97750
+
+Array = {120, 90, 356, 453, 203, 96}
+
+---- test 3: -----
+Index of i: 0
+Index of j: 1
+Index of k: 2
+Max before: -2147483648
+Max after: 3844800
+Index of k: 3
+Max before: 3844800
+Max after: 4892400
+Index of k: 4
+Max before: 4892400
+Max after: 4892400
+Index of k: 5
+Max before: 4892400
+Max after: 4892400
+Index of j: 2
+Index of k: 3
+Max before: 4892400
+Max after: 19352160
+Index of k: 4
+Max before: 19352160
+Max after: 19352160
+Index of k: 5
+Max before: 19352160
+Max after: 19352160
+Index of j: 3
+Index of k: 4
+Max before: 19352160
+Max after: 19352160
+Index of k: 5
+Max before: 19352160
+Max after: 19352160
+Index of j: 4
+Index of k: 5
+Max before: 19352160
+Max after: 19352160
+Index of i: 1
+Index of j: 2
+Index of k: 3
+Max before: 19352160
+Max after: 19352160
+Index of k: 4
+Max before: 19352160
+Max after: 19352160
+Index of k: 5
+Max before: 19352160
+Max after: 19352160
+Index of j: 3
+Index of k: 4
+Max before: 19352160
+Max after: 19352160
+Index of k: 5
+Max before: 19352160
+Max after: 19352160
+Index of j: 4
+Index of k: 5
+Max before: 19352160
+Max after: 19352160
+Index of i: 2
+Index of j: 3
+Index of k: 4
+Max before: 19352160
+Max after: 32737404
+Index of k: 5
+Max before: 32737404
+Max after: 32737404
+Index of j: 4
+Index of k: 5
+Max before: 32737404
+Max after: 32737404
+Index of i: 3
+Index of j: 4
+Index of k: 5
+Max before: 32737404
+Max after: 32737404
+Result: 32737404
